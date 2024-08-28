@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.app-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    margin-right: 10px;
+}
+
+#add-task-btn {
+    background-color: #fff;
+    color: #6a11cb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #ddd;
+}
+
+#task-list,
+#completed-task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.completed-item {
+    background-color: rgba(0, 255, 0, 0.2);
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.task-text {
+    flex: 1;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.task-actions {
+    display: flex;
+    padding-right: 10px;
+    gap: 15px;
+}
+
+
+
+
+
+.task-actions i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.task-actions i:hover {
+    color: #ff5252;
+
+}
+
+
+.completed-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .app-title {
+        font-size: 2em;
+    }
+}
